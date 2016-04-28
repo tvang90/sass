@@ -1,0 +1,57 @@
+@import "nav";
+
+// taking the nav setting from a partial titled "_nav"
+
+@mixin bgcolor($opacity) {
+  background-color: #35A7FF;
+  opacity: $opacity;
+}
+
+body {
+  @include bgcolor(0.7);
+  // importing style from the mixin setting
+}
+
+nav {
+  background: blue;
+  width: 200px;
+  padding: 5px;
+  margin-left: 10px;
+
+  ul {
+    list-style: none;
+    padding: 1px;
+  }
+  li {
+    display: inline;
+    margin-left: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: $white-color;
+    font-family: helvetica;
+    font-size: $font-size;
+    margin-right: 10px;
+  }
+
+  // able to nest attributes under the nav tag instead of having to target each one seperately
+}
+
+h1 {
+  color: yellow;
+  background-color: orange;
+  width: 300px;
+}
+
+h3 {
+  @extend h1;
+  // this takes the attributes that I have set for the h1 and appies it to the h3
+}
+
+article {
+  width: 200px;
+
+  p {
+    background-color: blue;
+  }
+}

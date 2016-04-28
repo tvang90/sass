@@ -1,0 +1,28 @@
+body {
+  background-color: #35A7FF;
+  opacity: 0.5; }
+
+nav {
+  background: blue;
+  width: 200px;
+  padding: 5px;
+  margin-left: 10px; }
+  nav ul {
+    list-style: none;
+    padding: 1px; }
+  nav li {
+    display: inline;
+    margin-left: 10px; }
+  nav a {
+    text-decoration: none;
+    color: green;
+    font-family: helvetica;
+    font-size: 20px;
+    margin-right: 10px; }
+
+article {
+  width: 200px; }
+  article p {
+    background-color: blue; }
+
+/*# sourceMappingURL=main.css.map */
